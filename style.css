@@ -1,0 +1,218 @@
+/* COMMON RULES */
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+.links a {
+	color: white;
+	text-decoration: none;
+}
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.btn {
+	color: white;
+	border: none;
+	border-radius: 20px;
+	padding: 10px 25px;
+	margin-top: 30px;
+	font-size: 15px;
+	font-weight: 200;
+}
+
+/* NAVBAR */
+.navbar {
+	background-color: #c12127;
+	color: white;
+	font-size: 12px;
+	padding: 10px 20px 10px 15px;
+}
+
+.navbar a {
+	margin-right: 20px;
+	margin-left: 10px;
+}
+
+/* HEADER */
+header {
+	background: rgb(36, 89, 120) url('./images/city-scape.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.header-nav {
+	color: white;
+	padding-top: 10px;
+}
+
+.header-nav form {
+	flex: 2;
+	width: 80%;
+	display: inline-flex;
+}
+.header-nav input {
+	width: 90%;
+	height: 35px;
+	background-color: rgb(31, 82, 111);
+	outline: none;
+	border: 1px solid white;
+	padding-left: 10px;
+	border-right: none;
+}
+.header-nav button {
+	width: 40px;
+	height: 37px;
+	background-color: rgb(31, 82, 111);
+	color: white;
+	outline: none;
+	border: 1px solid white;
+}
+.header-nav img {
+	width: 80px;
+	margin: 0 15px;
+}
+.menu img {
+	width: 30px;
+	vertical-align: middle;
+}
+.menu {
+	font-size: 13px;
+	margin-left: 5px;
+}
+.header-content {
+	padding: 90px;
+	color: white;
+	width: 40%;
+	margin-left: 170px;
+}
+
+.header-content h2 {
+	font-weight: 300;
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+.header-content button {
+	background: rgb(240, 146, 51);
+}
+
+/* ORGS SECTION */
+.orgs {
+	background: rgb(39, 53, 71);
+	color: white;
+	display: flex;
+	justify-content: space-around;
+	padding: 90px;
+}
+.wrap-img {
+	width: 35%;
+}
+.orgs-content {
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+}
+.orgs h2 {
+	font-weight: 300;
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+.orgs ul {
+	align-self: flex-end;
+	font-size: 17px;
+	font-weight: 200;
+}
+.orgs button {
+	background: rgb(203, 56, 55);
+	width: fit-content;
+}
+.orgs a {
+	color: white;
+	text-decoration: none;
+}
+.orgs p {
+	font-size: 13px;
+	margin-top: 15px;
+}
+
+/* WHAT-IS SECTION */
+.what-is {
+	background-image: url("images/forklift.svg");
+	background-repeat: no-repeat;
+	padding: 90px;
+	height: 45vh;
+}
+.description {
+	width: 30%;
+	color: white;
+	margin-top: 60px;
+	margin-left: 40px;
+}
+.description h2 {
+	font-weight: 300;
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+.description button {
+	background: rgb(49, 68, 88);
+}
+
+/* UTILITIES SECTION */
+.utilities {
+	margin: 50px auto;
+	text-align: center;
+}
+.utilities h2,
+.box h4 {
+	color: rgb(83, 88, 98);
+}
+.box-section {
+	margin: 25px auto;
+	padding: 0 50px;
+	display: flex;
+	justify-content: space-around;
+}
+.box {
+	width: 20%;
+}
+.utilities p {
+	text-align: center;
+	margin-top: 10px;
+	color: rgb(135, 145, 156);
+}
+.box a {
+	color: rgb(208, 74, 73);
+	text-decoration: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+	.header-content,
+	.description {
+		margin-left: 0;
+		padding: 20px;
+		width: initial;
+	}
+	header {
+		background-image: none;
+	}
+	.orgs,
+	.box-section {
+		display: flex;
+		flex-direction: column;
+	}
+	.wrap-img {
+		order: 2;
+		width: initial;
+	}
+	.orgs-content,
+	.box {
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	.utilities {
+		margin: 30px 20px;
+	}
+}
